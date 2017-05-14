@@ -1,0 +1,16 @@
+*.log.*
+*.log
+*.war
+*.rpm
+*.idea
+*.iml
+*.ipr
+*.iws
+build/
+.gradle/
+target/
+app/.sonar/
+build.properties
+/out/
+.DS_Store
+*.gitignore
