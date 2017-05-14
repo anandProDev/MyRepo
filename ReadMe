@@ -1,0 +1,33 @@
+
+create a repo in git
+commit files
+GET
+    Url encoding
+    Spring validation @Valid
+    Regex validation and check the error response
+    Return json response
+    Play with strctJson and its alternatives
+Integrate with in memory db
+CB integration
+POST
+PUT
+DELETE
+swagger
+    spring fox
+    alternative to spring swagger.yml
+unit tests
+integration test
+functional test
+wiremock
+aspect programming
+spring logging
+annotations:
+    controllerAdvice
+    Order
+
+spring io - different jar s
+spring profiler
+
+
+Zookeeper
+Zipkin - analyser
