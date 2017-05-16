@@ -6,6 +6,7 @@
 *.iml
 *.ipr
 *.iws
+*.class
 build/
 .gradle/
 target/
@@ -15,7 +16,6 @@ build.properties
 .DS_Store
 *.gitignore
 /*.idea
-*.class
 src/main/resources/
 /target/
 /.idea/
