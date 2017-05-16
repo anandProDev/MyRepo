@@ -7,8 +7,5 @@ import javax.ws.rs.core.MediaType;
 
 public interface EmployeeService {
 
-    @Path("/hello")
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
     public String hello();
 }
