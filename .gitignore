@@ -9,7 +9,6 @@
 *.class
 build/
 .gradle/
-target/
 app/.sonar/
 build.properties
 /out/
@@ -17,5 +16,5 @@ build.properties
 *.gitignore
 /*.idea
 src/main/resources/
-/target/
+target/
 /.idea/
