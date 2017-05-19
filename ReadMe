@@ -7,7 +7,9 @@ GET
     Regex validation and check the error response
     Return json response
     Play with strctJson and its alternatives
-Integrate with in memory db
+Docker
+    Integrate with in memory db - casandra, apache derby, hyPersonic
+hibernate
 CB integration
 POST
 PUT
@@ -31,3 +33,7 @@ spring profiler
 
 Zookeeper
 Zipkin - analyser
+
+-------------------------
+Android:
+Genymotion
