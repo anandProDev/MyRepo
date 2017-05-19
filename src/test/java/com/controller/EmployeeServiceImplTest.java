@@ -1,5 +1,7 @@
-package controller;
+package com.controller;
 
+import com.emp.controller.EmployeeService;
+import com.emp.controller.EmployeeServiceImpl;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,10 +23,10 @@ public class EmployeeServiceImplTest {
         employeeService = null;
     }
 
-    @Test
-    public void hello() throws Exception {
-        String hello = employeeService.hello();
-        assertThat(hello, is("Hi Anand"));
-    }
+//    @Test
+//    public void hello() throws Exception {
+//        String hello = employeeService.hello();
+//        assertThat(hello, is("Hi Anand"));
+//    }
 
 }
