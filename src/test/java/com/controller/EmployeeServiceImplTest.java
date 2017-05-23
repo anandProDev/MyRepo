@@ -8,12 +8,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 
+import static com.domain.Greeting.GreetingBuilder;
+import static com.model.GreetingModel.GreetingModelBuilder;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 public class EmployeeServiceImplTest {
@@ -37,8 +37,8 @@ public class EmployeeServiceImplTest {
     @Test
     public void when_sayHello_isInvoked_returns_a_greetingModel() throws Exception {
 
-        Greeting greeting = new Greeting(1, NAME);
-        GreetingModel greetingModel1 = new GreetingModel(1, "hello,"+ NAME + "!");
+        Greeting greeting = new GreetingBuilder().setId(1).setContent(NAME).build();
+        GreetingModel greetingModel1 = new GreetingModelBuilder().setId(1).setContent("hello," + NAME + "!").build();
 
         when(greetingTransformer.transform(anyString())).thenReturn(greeting);
         when(greetingTransformer.transform(greeting)).thenReturn(greetingModel1);
@@ -49,7 +49,5 @@ public class EmployeeServiceImplTest {
         assertThat("hello,"+ NAME + "!", is(greetingModel.getContent()));
         verify(greetingTransformer, times(1)).transform(NAME);
         verify(greetingTransformer, times(1)).transform(greeting);
-
-
     }
 }

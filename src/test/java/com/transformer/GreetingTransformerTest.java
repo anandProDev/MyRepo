@@ -4,8 +4,9 @@ import com.domain.Greeting;
 import com.model.GreetingModel;
 import org.junit.Test;
 
+import static com.domain.Greeting.GreetingBuilder;
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class GreetingTransformerTest {
 
@@ -23,7 +24,7 @@ public class GreetingTransformerTest {
     @Test
     public void transformDomainToModel() {
 
-        Greeting greeting = new Greeting(1, NAME);
+        Greeting greeting = new GreetingBuilder().setId(1).setContent(NAME).build();
         GreetingModel greetingModel = greetingTransformer.transform(greeting);
 
         assertThat(greetingModel.getContent(), is("Hello, " + NAME + "!"));

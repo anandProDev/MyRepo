@@ -18,4 +18,23 @@ public class Greeting {
         return content;
     }
 
+
+    public static class GreetingBuilder {
+        private long id;
+        private String content;
+
+        public GreetingBuilder setId(long id) {
+            this.id = id;
+            return this;
+        }
+
+        public GreetingBuilder setContent(String content) {
+            this.content = content;
+            return this;
+        }
+
+        public Greeting build() {
+            return new Greeting(id, content);
+        }
+    }
 }
