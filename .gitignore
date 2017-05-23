@@ -14,7 +14,7 @@ build.properties
 /out/
 .DS_Store
 *.gitignore
-/*.idea
+/*.idea/*
 src/main/resources/
 target/
 /.idea/
