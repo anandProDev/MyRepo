@@ -1,8 +1,9 @@
 package com.controller;
 
-import com.model.GreetingModel;
+
+import com.domain.Employee;
 
 public interface EmployeeService {
 
-    GreetingModel sayHello(String name);
+    Employee getEmployee();
 }

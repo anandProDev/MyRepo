@@ -16,17 +16,17 @@ import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.*;
 import static org.mockito.MockitoAnnotations.initMocks;
 
-public class EmployeeServiceImplTest {
+public class GreetingServiceImplTest {
 
     public static final String NAME = "Anand";
-    EmployeeService employeeService;
+    GreetingService employeeService;
 
     @Mock private GreetingTransformer greetingTransformer;
 
     @Before
     public void setUp() throws Exception {
         initMocks(this);
-        employeeService = new EmployeeServiceImpl(greetingTransformer);
+        employeeService = new GreetingServiceImpl(greetingTransformer);
     }
 
     @After
