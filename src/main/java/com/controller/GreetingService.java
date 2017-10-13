@@ -6,5 +6,5 @@ public interface GreetingService {
 
     GreetingModel sayHello(String name);
 
-    void sayHello(GreetingModel greetingModel);
+    String sayHello(GreetingModel greetingModel);
 }

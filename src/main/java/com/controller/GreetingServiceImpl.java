@@ -29,8 +29,8 @@ public class GreetingServiceImpl implements GreetingService {
 
     @Override
     @RequestMapping(path="/hello",method=RequestMethod.POST)
-    public void sayHello(GreetingModel greetingModel) {
-
+    public String sayHello(GreetingModel greetingModel) {
+        return "hello";
 
     }
 
